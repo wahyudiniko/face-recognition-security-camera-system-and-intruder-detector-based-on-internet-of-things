@@ -1,6 +1,7 @@
-#Modified by smartbuilds.io
+#Modified by smartbuilds.io | niko wahyudi
 #Date: 27.06.20
 #Desc: This scrtipt is running a face recongition of a live webcam stream. This is a modifed
+
 #code of the orginal Ageitgey (GitHub) face recognition demo to include multiple faces.
 #Simply add the your desired 'passport-style' face to the 'profiles' folder.
 

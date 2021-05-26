@@ -5,8 +5,8 @@ os.system("cls")
 name = input("please input your name | masukkan nama anda: ")
 
 cam = cv2.VideoCapture(0) 
-cv2.namedWindow("data set", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("data set", 800, 600 )
+cv2.namedWindow("press space to take a photo | tekan spasi untuk mengambil foto", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("press space to take a photo | tekan spasi untuk mengambil foto", 800, 600 )
 
 
 while True:

@@ -69,8 +69,8 @@ class VideoCamera(object):
             face_locations = face_recognition.face_locations(rgb_small_frame)
             face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
 
-            global name_gui;
-            #face_names = []
+
+            face_names = []
             for face_encoding in face_encodings:
                 # See if the face is a match for the known face(s)
                 matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
@@ -101,8 +101,6 @@ class VideoCamera(object):
                 # print(name)
                 #print(face_locations)
                 face_names.append(name)
-        
-                name_gui = name
 
 
         process_this_frame = not process_this_frame
@@ -121,7 +119,7 @@ class VideoCamera(object):
             # Draw a label with a name below the face
             cv2.rectangle(image, (left, bottom - 35), (right, bottom), (255, 255, 255), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
-            cv2.putText(image, name_gui, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
+            cv2.putText(image, name, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
 
         
         ret, jpeg = cv2.imencode('.jpg', image)

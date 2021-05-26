@@ -60,8 +60,7 @@ while True:
         face_locations = face_recognition.face_locations(rgb_small_frame)
         face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations)
 
-        global name_gui;
-        #face_names = []
+        face_names = []
         for face_encoding in face_encodings:
             # See if the face is a match for the known face(s)
             matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
@@ -78,8 +77,6 @@ while True:
             #print(name)
             #print(face_locations)
             face_names.append(name)
-    
-            name_gui = name
 
     process_this_frame = not process_this_frame
 
@@ -98,7 +95,7 @@ while True:
         # Draw a label with a name below the face
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (255, 255, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name_gui, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
+        cv2.putText(frame, name, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
 
     # Display the resulting image
     cv2.imshow('Video', frame)

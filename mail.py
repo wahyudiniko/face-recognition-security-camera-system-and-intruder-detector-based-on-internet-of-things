@@ -12,6 +12,7 @@ UserPassword = "ihfpxvhrrjzuizlt"
 
 
 def sendEmail(ImgFileName):
+    print("Sending mail...")
     img_data = open(ImgFileName, 'rb').read()
     msg = MIMEMultipart()
     msg['Subject'] = subject
@@ -29,5 +30,5 @@ def sendEmail(ImgFileName):
     s.ehlo()
     s.login(UserName, UserPassword)
     s.sendmail(to, to, msg.as_string())
-    print("Sending mail")
+    print("Successfully sending an email. \n")
     s.quit()

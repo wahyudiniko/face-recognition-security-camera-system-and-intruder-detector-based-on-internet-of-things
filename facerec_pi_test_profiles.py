@@ -26,6 +26,9 @@ face_encodings = []
 face_names = []
 process_this_frame = True
 
+prev_frame_time = 0
+new_frame_time = 0
+
 #Loop to add images in friends folder
 for file in os.listdir("profiles"):
     try:
@@ -53,6 +56,13 @@ while True:
 
     # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
     rgb_small_frame = small_frame[:, :, ::-1]
+    
+    # FPS
+    new_frame_time = time.time()
+    fps = 1/(new_frame_time-prev_frame_time)
+    prev_frame_time = new_frame_time
+    fps = int(fps)
+    fps = str(fps)
 
     # Only process every other frame of video to save time
     if process_this_frame:
@@ -96,6 +106,10 @@ while True:
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (255, 255, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
+    
+    # Display the FPS in the corner left of the frame
+    font = cv2.FONT_HERSHEY_DUPLEX
+    cv2.putText(frame, fps, (7, 70), font, 3, (232, 230, 230), 3, cv2.LINE_AA)
 
     # Display the resulting image
     cv2.imshow('Video', frame)

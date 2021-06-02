@@ -95,10 +95,10 @@ class VideoCamera(object):
                     #found_intruder = False
                 else:
                     print("\n")
+                    print("=============================== \n")
                     print("INTRUDER DETECTED !!! \n")
-                    cv2.imwrite('img.jpg', image)
-                    sendEmail('img.jpg')
-                    print("===============================")
+                    cv2.imwrite('saved_image\img.jpg', image)
+                    sendEmail('saved_image\img.jpg')
 
                 #print(name)
                 #print(face_locations)

@@ -94,10 +94,10 @@ class VideoCamera(object):
                     name = known_person[best_match_index]
                     # found_intruder = False
                 else:
-                    print("INTRUDER DETECTED !!!")
+                    print("INTRUDER DETECTED !!! \n")
                     cv2.imwrite('img.jpg', image)
                     sendEmail('img.jpg')
-                    print("successfully sending an email")
+                    print("successfully sending an email. \n")
 
                 # print(name)
                 #print(face_locations)

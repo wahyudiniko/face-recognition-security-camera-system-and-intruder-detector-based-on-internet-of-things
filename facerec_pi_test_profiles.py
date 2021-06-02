@@ -8,12 +8,13 @@ import face_recognition
 import cv2
 import numpy as np
 import os
+import time
 
 # Note: This script requires OpenCV (the `cv2` library) to be installed only to read from your webcam.
 # Visit smartbuids.io for more information
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 #Store objects in array
 known_person=[] #Name of person string
@@ -46,6 +47,8 @@ for file in os.listdir("profiles"):
 #print(len(known_face_encodings))
 #print(known_person)
 
+        #fps
+
 
 while True:
     # Grab a single frame of video
@@ -56,8 +59,7 @@ while True:
 
     # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
     rgb_small_frame = small_frame[:, :, ::-1]
-    
-    # FPS
+
     new_frame_time = time.time()
     fps = 1/(new_frame_time-prev_frame_time)
     prev_frame_time = new_frame_time
@@ -98,6 +100,9 @@ while True:
         right *= 4
         bottom *= 4
         left *= 4
+    
+
+
 
         # Draw a box around the face
         cv2.rectangle(frame, (left, top), (right, bottom), (255, 255, 255), 2)
@@ -106,11 +111,9 @@ while True:
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (255, 255, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 10, bottom - 10), font, 1.0, (0, 0, 0), 1)
-    
-    # Display the FPS in the corner left of the frame
+
     font = cv2.FONT_HERSHEY_DUPLEX
     cv2.putText(frame, fps, (7, 70), font, 3, (232, 230, 230), 3, cv2.LINE_AA)
-
     # Display the resulting image
     cv2.imshow('Video', frame)
 

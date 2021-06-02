@@ -5,6 +5,8 @@ import time
 import os
 from flask_basicauth import BasicAuth
 
+
+os.system("cls")
 app = Flask(__name__)
 #app = Flask(__name__, template_folder='/var/www/html/templates')
 
@@ -14,7 +16,7 @@ app.config['BASIC_AUTH_FORCE'] = True
 
 basic_auth = BasicAuth(app)
 
-template = 'index2.html'
+template = 'index.html'
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -39,4 +41,4 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, threaded=True)
+    app.run(host='0.0.0.0', debug=False, threaded=True)

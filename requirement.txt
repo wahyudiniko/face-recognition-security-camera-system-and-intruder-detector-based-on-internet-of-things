@@ -1,0 +1,4 @@
+numpy
+smtplib
+face_recognition
+cv2

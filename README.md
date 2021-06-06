@@ -2,9 +2,7 @@
 
 A college project about the implementation of facial recognition and internet of thing to a security camera system. A Security camera system that detect an unidentified face and sending an e-mail as an alert.
 
-![alt text](../main/src/img/m2.jpg "alert")
-
-![alt text](../main/src/img/m3.jpg "e-mail")
+![alt text](../main/src/img/m2.jpg "alert") ![alt text](../main/src/img/m3.jpg "e-mail")
 
 By Niko Wahyudi
 

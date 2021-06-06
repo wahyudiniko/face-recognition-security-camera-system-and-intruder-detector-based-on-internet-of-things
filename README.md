@@ -92,7 +92,9 @@ This is the log of devices that are currently accessing the webcam through web-b
 When an unidentified person is detected, an e-mail will be sending to receiver email.
 
 This is the display in web-browser.
+
 ![alt text](../main/src/img/browser3.png "unidentified person")
 
 This is a status update being displayed in the command line.
+
 ![alt text](../main/src/img/cmd3.png "status update")

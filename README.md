@@ -71,15 +71,18 @@ and wait until this displayed on command line
 
 ## Accessing webcam from web-browser
 Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pop up. Fill it with your auth username and password.
+
 ![alt text](../main/src/img/login.png "login auth")
 
 This is the web-browser display in pc.
+
 ![alt text](../main/src/img/browser.png "pc browser display")
 
 ![alt text](../main/src/img/browser2.png "pc multi-faces browser display")
 
 You can also access it from different device that connected to the same network. You also being asked a login authorization. This is the web-browser display in smartphone.
-![alt text](../main/src/img/m1.png "smartphone browser display")
+
+![alt text](../main/src/img/m1.jpg "smartphone browser display")
 
 This is the log of devices that are currently accessing the webcam through web-browser.
 ![alt text](../main/src/img/cmd4.png "log devices")

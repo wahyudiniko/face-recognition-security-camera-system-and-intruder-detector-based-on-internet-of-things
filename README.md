@@ -1,6 +1,6 @@
 # Face Recognition Security Camera and Intruder Detector System based on Internet Of Things
 
-A college project about the implementation of facial recognition and the internet of things to a security camera system. A Security camera system that detects an unidentified face and sending an e-mail as an alert. 
+A college project about the implementation of facial recognition and the internet of things to a security camera system. A security camera system that detects an unidentified face and sending an e-mail as an alert. 
 
 By Niko Wahyudi
 

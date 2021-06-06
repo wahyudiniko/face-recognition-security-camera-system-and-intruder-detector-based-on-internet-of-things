@@ -6,9 +6,9 @@ from email.mime.multipart import MIMEMultipart
 
 
 subject = "An intruder has been detected"
-to = "wahyudiniko0@gmail.com"
-UserName = "raspipengirim1@gmail.com"
-UserPassword = "ihfpxvhrrjzuizlt"
+to = "wahyudiniko0@gmail.com"           # receiver email address
+UserName = "raspipengirim1@gmail.com"   # sender e-mail address
+UserPassword = "ihfpxvhrrjzuizlt"       # both sender and receiver e-mail address only works for gmail
 
 
 def sendEmail(ImgFileName):

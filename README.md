@@ -26,7 +26,7 @@ cd security-camera-intruder-detector
 ```
 pip install -r requirements.txt
 ```
-for windows 10, can install OpenCV via pip
+For windows 10, can install OpenCV via pip
 ```
 pip install opencv-python
 pip install opencv-contrib-python

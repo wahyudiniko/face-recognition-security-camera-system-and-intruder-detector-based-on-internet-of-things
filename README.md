@@ -25,8 +25,10 @@ pip install -r requirements.txt
 
 ## Registering Face
 Run the file `face
+
 ## Modify both sender and reciever e-mail
-After the requirement were installed, you can modify the `to` variable to e-mail address you want to use to recieve the e-mail and the `UserName` variable for the sender e-mail. For `UserPassword` variable, you can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en) to avoid storing your password in plain text. here's the code in the [`mail.py`](https://github.com/wahyudiniko/security-camera-intruder-detector/blob/main/mail.py) file
+After the requirement were installed, you can modify the `to` variable to e-mail address you want to use to recieve the e-mail and the `UserName` variable for the sender e-mail. For `UserPassword` variable, you can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en) to avoid storing your password in plain text. here's the code in the [`mail.py`](../blob/main/mail.py) file line 8-11
+
 ```python
 subject = "An intruder has been detected"
 to = "receiver_email_address"           # receiver email address

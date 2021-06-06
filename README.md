@@ -48,7 +48,7 @@ UserPassword = "sender_email_password"  # both sender and receiver e-mail addres
 ```
 
 ## Modify Login Authorization
-In order to secure the webcam access, we need to authorize. You can modify the code in the [`main.py`](../main/main.py) file line 13-14:
+In order to secure the webcam access, we need an authorization. You can modify the code in the [`main.py`](../main/main.py) file line 13-14:
 ```python
 app.config['BASIC_AUTH_USERNAME'] = 'your_uname'
 app.config['BASIC_AUTH_PASSWORD'] = 'your_password'

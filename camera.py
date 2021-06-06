@@ -97,8 +97,8 @@ class VideoCamera(object):
                     print("\n")
                     print("=============================== \n")
                     print("INTRUDER DETECTED !!! \n")
-                    cv2.imwrite('saved_image\img.jpg', image)
-                    sendEmail('saved_image\img.jpg')
+                    cv2.imwrite('src\saved_image\img.jpg', image)
+                    sendEmail('src\saved_image\img.jpg')
 
                 #print(name)
                 #print(face_locations)

@@ -44,8 +44,8 @@ and then a window will pop up. Press `spacebar` to take the picture or press `Es
 ![alt text](../main/src/img/faceshot2.png "face_shot.py frame window")
 
 
-## Modify both sender and reciever e-mail
-After the requirement were installed, you can modify the `to` variable to e-mail address you want to use to recieve the e-mail and the `UserName` variable for the sender e-mail. For `UserPassword` variable, you can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en) to avoid storing your password in plain text. here's the code in the [`mail.py`](../main/mail.py) file line 9-11
+## Modify sender and reciever e-mail
+After the requirements were installed, you can modify the `to` variable to the e-mail address you want to use to recieve the e-mail and the `UserName` variable for the sender e-mail. For `UserPassword` variable, you can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en) to avoid storing your password in plain text. here's the code in the [`mail.py`](../main/mail.py) file line 9-11
 
 ```python
 to = "receiver_email_address"           # receiver email address
@@ -54,7 +54,7 @@ UserPassword = "sender_email_password"  # both sender and receiver e-mail addres
 ```
 
 ## Modify Login Authorization
-In order to secure the webcam access, we need an authorization. You can modify the code in the [`main.py`](../main/main.py) file line 13-14:
+In order to secure the webcam access, we need authorization. You can modify the code in the [`main.py`](../main/main.py) file line 13-14:
 ```python
 app.config['BASIC_AUTH_USERNAME'] = 'your_uname'
 app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
@@ -62,7 +62,7 @@ app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
 
 
 ## Execution
-You can run the program by typing in the command line or terminal by this command:
+You can run the program by type this command in the command line or terminal:
 ```
 python main.py
 ```
@@ -70,7 +70,7 @@ and wait until this displayed on command line
 ![alt text](../main/src/img/cmd1.png "initiate main.py")
 
 ## Accessing webcam from web-browser
-Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pop up. Fill it with your auth username and password.
+Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pops up. Fill it with your auth username and password.
 
 ![alt text](../main/src/img/login.png "login auth")
 
@@ -80,18 +80,18 @@ This is the web-browser display in pc.
 
 ![alt text](../main/src/img/browser2.png "pc multi-faces browser display")
 
-You can also access it from different device that connected to the same network. You also being asked a login authorization. This is the web-browser display in smartphone.
+You can also access it from different devices that connected to the same network. You also being asked for a login authorization. This is the web-browser display in smartphone.
 
 ![alt text](../main/src/img/m1.jpg "smartphone browser display")
 
-This is the log of devices that are currently accessing the webcam through web-browser.
+This is the log of devices that are currently accessing the webcam through a web browser.
 ![alt text](../main/src/img/cmd4.png "log devices")
 
 
 ## Alert
 When an unidentified person is detected, an e-mail will be sending to receiver email.
 
-This is the display in web-browser.
+This is the display in web browser.
 
 ![alt text](../main/src/img/browser3.png "unidentified person")
 

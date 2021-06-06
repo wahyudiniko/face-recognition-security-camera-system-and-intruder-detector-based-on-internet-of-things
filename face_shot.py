@@ -23,7 +23,7 @@ while True:
         break
     elif k%256 == 32:
         # SPACE pressed
-        img_name = "profiles/"+ "{}.jpg".format(name)
+        img_name = "src/profiles/"+ "{}.jpg".format(name)
         cv2.imwrite(img_name, frame)
         print("{} written!".format(img_name))
         break

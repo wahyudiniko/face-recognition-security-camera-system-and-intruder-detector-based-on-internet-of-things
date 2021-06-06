@@ -47,7 +47,7 @@ for file in os.listdir("profiles"):
 #print(len(known_face_encodings))
 #print(known_person)
 
-        #fps
+        
 
 
 while True:

@@ -1,6 +1,6 @@
 # face-recognition-security-camera-system-and-intruder-detector-based-on-internet-of-things
 
-A college project about the implementation of facial recognition and internet of thing to a security camera system. A Security camera system that detect an unidentified face and sending an e-mail as an alert.
+A college project about the implementation of facial recognition and the internet of things to a security camera system. A Security camera system that detects an unidentified face and sending an e-mail as an alert.
 
 ![alt text](../main/src/img/m2.jpg "alert") ![alt text](../main/src/img/m3.jpg "e-mail")
 
@@ -66,6 +66,30 @@ You can run the program by typing in the command line or terminal by this comman
 ```
 python main.py
 ```
+and wait until this displayed on command line
+![alt text](../main/src/img/cmd1.png "initiate main.py")
 
 ## Accessing webcam from web-browser
-Type `https://your_local_ip_address:5000` inside the address bar.
+Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pop up. Fill it with your auth username and password.
+![alt text](../main/src/img/login.png "login auth")
+
+This is the web-browser display in pc.
+![alt text](../main/src/img/browser.png "pc browser display")
+
+![alt text](../main/src/img/browser2.png "pc multi-faces browser display")
+
+You can also access it from different device that connected to the same network. You also being asked a login authorization. This is the web-browser display in smartphone.
+![alt text](../main/src/img/m1.png "smartphone browser display")
+
+This is the log of devices that are currently accessing the webcam through web-browser.
+![alt text](../main/src/img/cmd4.png "log devices")
+
+
+## Alert
+When an unidentified person is detected, an e-mail will be sending to receiver email.
+
+This is the display in web-browser.
+![alt text](../main/src/img/browser3.png "unidentified person")
+
+This is a status update being displayed in the command line.
+![alt text](../main/src/img/cmd3.png "status update")

@@ -62,7 +62,7 @@ app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
 
 
 ## Execution
-You can run the program by type this command in the command line or terminal:
+You can run the program by typing this command in the command line or terminal:
 ```
 python main.py
 ```

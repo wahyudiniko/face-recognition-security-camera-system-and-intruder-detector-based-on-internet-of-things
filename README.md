@@ -73,7 +73,7 @@ app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
 ```
 python main.py
 ```
-+ wait until this displayed on command line
++ Wait until this displayed on command line
  
 ![alt text](../main/src/img/cmd1.png "initiate main.py")
 

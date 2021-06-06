@@ -8,10 +8,14 @@ A college project about the implementation of facial recognition and internet of
 
 By Niko Wahyudi
 
+
+
+
 # Prerequisites
 + Windows or Linux
 + Python 3
 + Python Packages Manager (PIP) 
+
 
 # Getiing Started
 

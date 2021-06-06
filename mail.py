@@ -6,8 +6,8 @@ from email.mime.multipart import MIMEMultipart
 
 
 subject = "An intruder has been detected"
-to = "wahyudiniko0@gmail.com"
-UserName = "raspipengirim1@gmail.com"
+to = "wahyudiniko0@gmail.com"           # receiver email
+UserName = "raspipengirim1@gmail.com"   # sender e-mail
 UserPassword = "ihfpxvhrrjzuizlt"
 
 

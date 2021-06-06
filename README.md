@@ -6,6 +6,6 @@ By Niko Wahyudi
 # requirements
 
 for requirements, we can install it via pip with this command:
-```bash
+```
 pip install -r requirements.txt 
 ```

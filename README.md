@@ -14,7 +14,7 @@ By Niko Wahyudi
 + Python Packages Manager (PIP) 
 
 
-# Getiing Started
+# Getting Started
 
 ## Installation
 + Clone this repository:

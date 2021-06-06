@@ -5,5 +5,7 @@ By Niko Wahyudi
 
 # requirements
 
-for requirements, we can install it via pip with this command (without quoted and unquoted): 
-"pip install -r requirements.txt" 
+for requirements, we can install it via pip with this command:
+```
+pip install -r requirements.txt 
+```

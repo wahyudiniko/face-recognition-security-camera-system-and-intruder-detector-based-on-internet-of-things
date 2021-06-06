@@ -36,20 +36,21 @@ For Raspbian/Raspberry OS or other Linux distros you can follow the installaion 
 # Usage
 
 ## Registering Face
-Run the file [`face_shot.py`](../main/face_shot.py) in the terminal:
++ Run the file [`face_shot.py`](../main/face_shot.py) in the terminal:
 ```
 python face_shot.py
 ```
-insert your name
++ Insert your name
  
 ![alt text](../main/src/img/faceshot.png "face_shot.py cmd window")
 
-and then a window will pop up. Press `spacebar` to take the picture or press `Esc` to abort the program.
+and then a window will pop up. 
++ Press `spacebar` to take the picture or press `Esc` to abort the program.
 
 ![alt text](../main/src/img/faceshot2.png "face_shot.py frame window")
 
 
-## Modify sender and reciever e-mail
+## Modify Sender and Reciever E-mail
 After the requirements were installed, you can modify the `to` variable to the e-mail address you want to use to recieve the e-mail and the `UserName` variable for the sender e-mail. For `UserPassword` variable, you can generate an app password [here](https://support.google.com/accounts/answer/185833?hl=en) to avoid storing your password in plain text. here's the code in the [`mail.py`](../main/mail.py) file line 9-11
 
 ```python
@@ -59,7 +60,8 @@ UserPassword = "sender_email_password"  # both sender and receiver e-mail addres
 ```
 
 ## Modify Login Authorization
-In order to secure the webcam access, we need authorization. You can modify the code in the [`main.py`](../main/main.py) file line 13-14:
+In order to secure the webcam access, we need authorization. 
++ Modify the code to make your own authorization account in the [`main.py`](../main/main.py) file line 13-14:
 ```python
 app.config['BASIC_AUTH_USERNAME'] = 'your_uname'
 app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
@@ -67,15 +69,16 @@ app.config['BASIC_AUTH_PASSWORD'] = 'your_password'
 
 
 ## Execution
-You can run the program by typing this command in the command line or terminal:
++ You can run the `main.py` program by typing this command in the command line or terminal:
 ```
 python main.py
 ```
-and wait until this displayed on command line
++ wait until this displayed on command line
+ 
 ![alt text](../main/src/img/cmd1.png "initiate main.py")
 
-## Accessing webcam from web-browser
-Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pops up. Fill it with your authorization username and password.
+## Accessing Webcam From Web-browser
++ Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pops up. Fill it with your authorization username and password.
 
 ![alt text](../main/src/img/login.png "login auth")
 
@@ -90,6 +93,7 @@ You can also access it from different devices that connected to the same network
 ![alt text](../main/src/img/m1.jpg "smartphone browser display")
 
 This is the log of devices that are currently accessing the webcam through a web browser.
+ 
 ![alt text](../main/src/img/cmd4.png "log devices")
 
 

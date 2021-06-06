@@ -33,6 +33,7 @@ insert your name
 ![alt text](../main/src/img/faceshot.png "face_shot.py cmd window")
 
 and then a window will pop up. Press `spacebar` to take the picture or press `Esc` to abort the program.
+
 ![alt text](../main/src/img/faceshot2.png "face_shot.py frame window")
 
 

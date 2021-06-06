@@ -1,11 +1,10 @@
 # face-recognition-security-camera-system-and-intruder-detector-based-on-internet-of-things
 
-A college project about the implementation of facial recognition and the internet of things to a security camera system. A Security camera system that detects an unidentified face and sending an e-mail as an alert.
-
-![alt text](../main/src/img/m2.jpg "alert") ![alt text](../main/src/img/m3.jpg "e-mail")
+A college project about the implementation of facial recognition and the internet of things to a security camera system. A Security camera system that detects an unidentified face and sending an e-mail as an alert. 
 
 By Niko Wahyudi
 
+![alt text](../main/src/img/m2.jpg "alert") ![alt text](../main/src/img/m3.jpg "e-mail")
 
 
 
@@ -27,6 +26,12 @@ cd security-camera-intruder-detector
 ```
 pip install -r requirements.txt
 ```
+for windows 10, can install OpenCV via pip
+```
+pip install opencv-python
+pip install opencv-contrib-python
+```
+For Raspbian/Raspberry OS or other Linux distros you can follow the installaion guide [here](https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/)
 
 # Usage
 
@@ -70,15 +75,15 @@ and wait until this displayed on command line
 ![alt text](../main/src/img/cmd1.png "initiate main.py")
 
 ## Accessing webcam from web-browser
-Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pops up. Fill it with your auth username and password.
+Type `https://your_local_ip_address:5000` inside the address bar. Then an authorization form pops up. Fill it with your authorization username and password.
 
 ![alt text](../main/src/img/login.png "login auth")
 
-This is the web-browser display in pc.
+This is the web-browser display in PC.
 
-![alt text](../main/src/img/browser.png "pc browser display")
+![alt text](../main/src/img/browser.png "PC browser display")
 
-![alt text](../main/src/img/browser2.png "pc multi-faces browser display")
+![alt text](../main/src/img/browser2.png "PC multi-faces browser display")
 
 You can also access it from different devices that connected to the same network. You also being asked for a login authorization. This is the web-browser display in smartphone.
 

@@ -29,6 +29,7 @@ Run the file [`face_shot.py`](../main/face_shot.py) in the terminal:
 python face_shot.py
 ```
 insert your name
+ 
 ![alt text](../main/src/img/faceshot.png "face_shot.py cmd window")
 
 and then a window will pop up. Press `spacebar` to take the picture or press `Esc` to abort the program.

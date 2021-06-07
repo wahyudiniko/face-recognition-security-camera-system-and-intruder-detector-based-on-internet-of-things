@@ -111,3 +111,7 @@ This is the display in web browser.
 This is a status update being displayed in the command line.
 
 ![alt text](../main/src/img/cmd3.png "status update")
+ 
+An alert e-mail has been sended.
+ 
+![alt text](../main/src/img/m2.jpg "alert")

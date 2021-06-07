@@ -98,7 +98,7 @@ This is the log of devices that are currently accessing the webcam through a web
 
 
 ## Alert
-When an unidentified person is detected, an e-mail will be sending to receiver email.
+When an unidentified person is detected, an e-mail will be sending to the receiver email.
 
 This is the display in web browser.
 

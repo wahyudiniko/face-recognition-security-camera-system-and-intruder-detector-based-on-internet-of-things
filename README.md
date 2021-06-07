@@ -90,7 +90,7 @@ This is the web-browser display in PC.
 
 ![alt text](../main/src/img/test.gif "PC multi-faces browser display")
  
-When faces are detected the frame rate will drop and it's slower than when not detecting faces.
+When faces are detected the frame rate will significantly drop and it's slower than when not detecting faces.
 
 You can also access it from different devices that connected to the same network. You also being asked for a login authorization. This is the web-browser display in smartphone.
 

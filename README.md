@@ -9,7 +9,7 @@ By Niko Wahyudi
 
 
 # Prerequisites
-+ Windows or Linux
++ Windows 10 or Linux
 + Python 3
 + Python Packages Manager (PIP) 
 

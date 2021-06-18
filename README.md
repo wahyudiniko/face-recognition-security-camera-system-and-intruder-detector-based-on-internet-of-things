@@ -31,7 +31,7 @@ For windows 10, can install OpenCV via pip
 pip install opencv-python
 pip install opencv-contrib-python
 ```
-For Raspbian/Raspberry OS or other Linux distros you can follow the installaion guide [here](https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/) or run the 'installation_script.sh' bash script to install some dependencies.
+For Raspbian/Raspberry OS or other Linux distros you can follow the installaion guide [here](https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/) or run the `installation_script.sh` bash script to install some dependencies.
 
 # Usage
 

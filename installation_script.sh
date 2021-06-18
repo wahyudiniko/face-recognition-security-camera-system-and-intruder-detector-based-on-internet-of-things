@@ -5,13 +5,13 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # dependencies
-sudo apt-get install build-essential cmake pkg-config
-sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-sudo apt-get install libxvidcore-dev libx264-dev
-sudo apt-get install libgtk2.0-dev
-sudo apt-get install libatlas-base-dev gfortran
-sudo apt-get install python2.7-dev python3-dev
+sudo apt-get install --assume-yes build-essential cmake pkg-config
+sudo apt-get install --assume-yes libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install --assume-yes libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install --assume-yes libxvidcore-dev libx264-dev
+sudo apt-get install --assume-yes libgtk2.0-dev
+sudo apt-get install --assume-yes libatlas-base-dev gfortran
+sudo apt-get install --assume-yes python2.7-dev python3-dev
 
 # get opencv from opencv repository via wget
 cd ~
@@ -19,6 +19,10 @@ wget -O opencv.zip https://github.com/Itseez/opencv/archive/4.5.2.zip
 wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/4.5.2.zip
 unzip opencv.zip
 unzip opencv_contrib.zip
+
+# install pip
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
 
 # virtualenv and virtualenvwrapper
 sudo pip install virtualenv virtualenvwrapper

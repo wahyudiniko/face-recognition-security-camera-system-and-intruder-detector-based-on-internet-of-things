@@ -9,7 +9,7 @@ By Niko Wahyudi
 
 
 # Prerequisites
-+ Windows or Linux
++ Windows 10 or Linux
 + Python 3
 + Python Packages Manager (PIP) 
 
@@ -88,6 +88,10 @@ This is the web-browser display in PC.
 
 ![alt text](../main/src/img/browser2.png "PC multi-faces browser display")
 
+![alt text](../main/src/img/test.gif "PC multi-faces browser display")
+ 
+When faces are detected the frame rate will significantly drop and it's slower than when not detecting faces.
+
 You can also access it from different devices that connected to the same network. You also being asked for a login authorization. This is the web-browser display in smartphone.
 
 ![alt text](../main/src/img/m1.jpg "smartphone browser display")
@@ -107,3 +111,7 @@ This is the display in web browser.
 This is a status update being displayed in the command line.
 
 ![alt text](../main/src/img/cmd3.png "status update")
+ 
+An alert e-mail has been sended.
+ 
+![alt text](../main/src/img/m2.jpg "alert")

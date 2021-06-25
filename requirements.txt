@@ -1,4 +1,3 @@
 flask
 smtplib
-numpy
 face_recognition

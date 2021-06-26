@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # update and upgrade os
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update 
+sudo apt-get -y upgrade
 
+sudo apt-get install -y vim
 # dependencies
 sudo apt-get install --assume-yes build-essential cmake pkg-config
 sudo apt-get install --assume-yes libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
@@ -37,7 +38,7 @@ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 
 source ~/.profile
 
-# delete comment if using python 2
+# if using python 2
 # mkvirtualenv cv -p python2
 mkvirtualenv cv -p python3
 
@@ -46,7 +47,9 @@ workon cv
 
 pip install numpy
 
-cd ~/opencv-4.5.2
+workon cv
+
+cd ~/opencv-4.5.2/
 mkdir build
 cd build
 
@@ -56,10 +59,3 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-4.5.2/modules \
 -D BUILD_EXAMPLES=ON ..
 
-sudo nano /etc/dphys-swapfile
-CONF_SWAPSIZE=1024
-sudo /etc/init.d/dphys-swapfile restart
-
-make
-sudo make install
-sudo ldconfig

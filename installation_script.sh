@@ -31,10 +31,6 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 sudo pip install virtualenv virtualenvwrapper
 sudo rm -rf ~/.cache/pip
 
-# virtualenv and virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile

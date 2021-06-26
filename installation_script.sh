@@ -48,3 +48,22 @@ mkvirtualenv cv -p python3
 source ~/.profile
 workon cv
 
+pip install numpy
+
+cd ~/opencv-4.5.2
+mkdir build
+cd build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-4.5.2/modules \
+-D BUILD_EXAMPLES=ON ..
+
+sudo nano /etc/dphys-swapfile
+CONF_SWAPSIZE=1024
+sudo /etc/init.d/dphys-swapfile restart
+
+make
+sudo make install
+sudo ldconfig

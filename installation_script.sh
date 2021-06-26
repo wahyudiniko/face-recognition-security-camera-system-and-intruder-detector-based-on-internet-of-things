@@ -25,7 +25,7 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 
 # set python3 as default python
-update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 
 # virtualenv and virtualenvwrapper
 sudo pip install virtualenv virtualenvwrapper

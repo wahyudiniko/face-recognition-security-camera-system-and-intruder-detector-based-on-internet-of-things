@@ -6,7 +6,7 @@ import os
 from flask_basicauth import BasicAuth
 
 
-os.system("cls")
+os.system("clear")
 app = Flask(__name__)
 #app = Flask(__name__, template_folder='/var/www/html/templates')
 

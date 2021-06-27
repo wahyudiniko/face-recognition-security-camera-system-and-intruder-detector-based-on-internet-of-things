@@ -14,7 +14,7 @@ import time
 # Visit smartbuids.io for more information
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+video_capture = cv2.VideoCapture(0)
 
 #Store objects in array
 known_person=[] #Name of person string

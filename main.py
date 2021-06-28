@@ -6,7 +6,21 @@ import os
 from flask_basicauth import BasicAuth
 
 
-os.system("clear")
+def initializing():
+    print("initializing system in 5")
+    time.sleep(1)
+    print("initializing system in 4")
+    time.sleep(1)
+    print("initializing system in 3")
+    time.sleep(1)
+    print("initializing system in 2")
+    time.sleep(1)
+    print("initializing system in 1")
+    time.sleep(1)
+    print("begin")
+    os.system("clear")
+
+initializing()
 app = Flask(__name__)
 #app = Flask(__name__, template_folder='/var/www/html/templates')
 

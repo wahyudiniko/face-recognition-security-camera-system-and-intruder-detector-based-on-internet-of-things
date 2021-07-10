@@ -7,6 +7,7 @@ from flask_basicauth import BasicAuth
 
 
 def initializing():
+    os.system("clear")
     print("initializing system in 3")
     time.sleep(1)
     print("initializing system in 2")

@@ -7,10 +7,6 @@ from flask_basicauth import BasicAuth
 
 
 def initializing():
-    print("initializing system in 5")
-    time.sleep(1)
-    print("initializing system in 4")
-    time.sleep(1)
     print("initializing system in 3")
     time.sleep(1)
     print("initializing system in 2")
@@ -20,7 +16,7 @@ def initializing():
     print("begin")
     os.system("clear")
 
-initializing()
+
 app = Flask(__name__)
 #app = Flask(__name__, template_folder='/var/www/html/templates')
 
@@ -55,4 +51,5 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
+    initializing()
     app.run(host='0.0.0.0', debug=False, threaded=True)

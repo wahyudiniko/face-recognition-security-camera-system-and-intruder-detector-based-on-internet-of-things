@@ -75,35 +75,20 @@ class VideoCamera(object):
                 # See if the face is a match for the known face(s)
                 matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
                 name = "Unknown"
-                # found_intruder = True
-
-                # if found_intruder:
-                #     try:
-                #         cv2.imwrite('img.jpg', image)
-                #         sendEmail('img.jpg')
-                #         print("successfully sending an email")
-                #     except:
-                #         print("error sending an email !")
-                
-                #print(face_encoding)
-                #print(matches)
-
                 face_distances = face_recognition.face_distance(known_face_encodings, face_encoding)
                 best_match_index = np.argmin(face_distances)
+                
                 if matches[best_match_index]:
                     name = known_person[best_match_index]
-                    #found_intruder = False
                 else:
                     print("\n")
                     print("=============================== \n")
                     print("INTRUDER DETECTED !!! \n")
                     cv2.imwrite('src/saved_image/img.jpg', image)
                     sendEmail('src/saved_image/img.jpg')
-
+                face_names.append(name)
                 #print(name)
                 #print(face_locations)
-                face_names.append(name)
-
 
         process_this_frame = not process_this_frame
             

@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #Modified by smartbuilds.io | Niko Wahyudi
 #Date: 27.06.20 | 02.06.21
 #Desc: This scrtipt is running a face recongition of a live webcam stream. This is a modifed
